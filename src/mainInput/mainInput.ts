@@ -11,6 +11,6 @@ export class MainInput {
     }
 
     template = () => {
-        return html` <div class="owner"></div> `;
+        return html` <input type="text" />`;
     };
 }

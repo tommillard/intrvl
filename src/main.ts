@@ -2,6 +2,7 @@ const appNode: HTMLDivElement = document.querySelector<HTMLDivElement>("#app")!;
 
 import { html, render } from "lit-html";
 import { MainInput } from "./mainInput/mainInput";
+import "./simple.css";
 
 export interface IWorkout {
     title: string;
@@ -14,8 +15,8 @@ export class App {
 
     mainInput: MainInput;
 
-    constructor() {
-        this.container = appNode;
+    constructor(container: HTMLElement) {
+        this.container = container;
         this.container.classList.add("app");
         this.mainInput = new MainInput();
         this.data = {
@@ -26,6 +27,8 @@ export class App {
     }
 
     template = (data: IWorkout) => {
-        return html` <div class="owner">${this.mainInput.container}</div> `;
+        return html` <div class="xxx">${this.mainInput.container}</div> `;
     };
 }
+
+new App(appNode);
