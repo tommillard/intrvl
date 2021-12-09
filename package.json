@@ -1,7 +1,21 @@
 {
-  "prettier": {
-    "tabWidth": 4,
-    "arrowParens": "always",
-    "trailingComma": "es5"
-  }
+    "name": "intrvl",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "typescript": "^4.4.4",
+        "vite": "^2.7.0"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "arrowParens": "always",
+        "trailingComma": "es5"
+    },
+    "dependencies": {
+        "lit-html": "^2.0.2"
+    }
 }
